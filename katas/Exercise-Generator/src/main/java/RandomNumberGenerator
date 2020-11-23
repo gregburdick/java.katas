@@ -1,0 +1,10 @@
+public class RandomNumberGenerator {
+
+    public RandomNumberGenerator() {
+    }
+
+    public int randomNumberGenerator(){
+        int random = (int)(Math.random() * 50 + 1);
+        return random;
+    }
+}
