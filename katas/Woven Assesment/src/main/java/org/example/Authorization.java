@@ -44,22 +44,18 @@ class Authorization {
         List<Users.Profile> profiles = Users.SocialMediaProfiles.fetchSocialProfiles(email);
 
 //     permission = user(userId)
-        if permission.active = true {
+        if (permission.active = true) {
             try {
-                return user.roles
-            }
-            catch (Exception e)
-            {
+                return (ArrayList<String>) user.roles;
+            } catch (Exception e) {
                 // ToDo: split this error handling so that each lookup is specific and properly handled;
                 System.out.println("user or role cannot be found");
-
-
-            } else {
-                return Collections.emptyList();
             }
         }
+                return new ArrayList();
+    }
 
-        public boolean checkPermitted(String permissionName, int userId) {
+        public boolean checkPermitted (String permissionName,int userId){
             // TODO: fill this out!
             throw new RuntimeException("Please remove this when you implement this function");
         }
