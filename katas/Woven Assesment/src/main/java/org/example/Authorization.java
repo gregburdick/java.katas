@@ -40,8 +40,8 @@ class Authorization {
         User user = new User();
         Permission permission = new Permission();
 
-        // trying to use this as a template...
-        List<Users.Profile> profiles = Users.SocialMediaProfiles.fetchSocialProfiles(email);
+//         trying to use this as a template...
+//        List<Users.Profile> profiles = Users.SocialMediaProfiles.fetchSocialProfiles(email);
 
 //     permission = user(userId)
         if (permission.active = true) {
